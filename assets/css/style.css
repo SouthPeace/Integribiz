@@ -395,10 +395,18 @@ a:not(.btn) { color: var(--primary-blue); }
 /* Footer: everything readable */
 .footer,
 .footer * {
-  color: #fff !important;
+  color: var(--neutral-dark) !important;
   opacity: 1 !important;
   -webkit-text-fill-color: currentColor;
 }
+.footer .footer-list {
+  color: #fff !important; 
+  opacity: 1 !important;
+  -webkit-text-fill-color: currentColor;
+}
+.footer .ib-word { color: #fff !important; }
+.footer .section-text { color: #fff !important; }
+
 .footer .footer-link:hover,
 .footer .item-link:hover { color: var(--primary-blue) !important; text-decoration: underline; }
 .footer .footer-list-title { font-weight: 700 !important; }
