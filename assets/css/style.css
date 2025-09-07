@@ -324,3 +324,17 @@ a:not(.btn) { color: var(--primary-blue); }
   font-family: var(--ff-heading);
   font-weight: 700; letter-spacing: .2px; color: #1A3543;
 }
+
+/* === SOLID HEADINGS ON LIGHT BACKGROUNDS === */
+.section:not(.theme-dark) .section-title,
+.section:not(.theme-dark) .h1,
+.section:not(.theme-dark) .h2,
+.section:not(.theme-dark) .h3,
+.features-card .card-title,
+.about .item-title,
+.audience .audience-title,
+.pricing .pricing-title {
+  color: var(--neutral-dark) !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: currentColor; /* Safari guard */
+}
