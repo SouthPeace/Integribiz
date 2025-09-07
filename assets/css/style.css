@@ -353,11 +353,19 @@ a:not(.btn) { color: var(--primary-blue); }
   -webkit-text-fill-color: currentColor;
 }
 
+#audience .section-title,
+#audience .industries-title,
+#audience .security-support-text {
+  color: #E7EEF3 !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: currentColor;
+}
+
 /* Security & reliability (explicit targets) */
 #security .section-title,
 #security .security-support-title,
 #security .security-support-text {
-  color: var(--neutral-dark) !important;
+  color: #E7EEF3 !important;
   opacity: 1 !important;
   -webkit-text-fill-color: currentColor;
 }
