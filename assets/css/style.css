@@ -31,8 +31,10 @@
   --shadow: 0 8px 28px rgba(26,53,67,.08);
 
   /* Typography */
-  --ff-heading: 'Sora', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  --ff-body: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+
+  --ff-heading: 'Poppins', 'Roboto', system-ui, -apple-system, 'Segoe UI', sans-serif !important;
+  --ff-body: 'Roboto', system-ui, -apple-system, 'Segoe UI', sans-serif !important;
+
 
   /* Fluid type */
   --fs-hero: clamp(2rem, 1.2rem + 3.9vw, 3.5rem);
@@ -79,12 +81,13 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
+  color: var(--neutral-dark) !important; 
   margin: 0; background: var(--bg); color: var(--text);
   font-family: var(--ff-body); font-size: var(--fs-body); line-height: 1.7;
   text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased;
 }
 img { max-width: 100%; display: block; border-radius: var(--radius-sm); }
-a { color: inherit; text-decoration: none; }
+a { color: var(--primary-blue) !important; opacity: 1 !important; }
 button { font: inherit; cursor: pointer; border: 0; background: none; }
 
 /* Focus */
@@ -108,7 +111,10 @@ button { font: inherit; cursor: pointer; border: 0; background: none; }
 .container { width: min(1200px, 100%); margin-inline: auto; padding-inline: clamp(16px, 3vw, 32px); }
 .section { padding-block: var(--padding-section); }
 .section-title { font-family: var(--ff-heading); font-weight: 700; font-size: var(--fs-h2); margin: 0 0 18px; }
-.section-subtitle { color: var(--muted); font-size: var(--fs-small); letter-spacing: .02em; margin-bottom: 8px; }
+.section-subtitle {
+  color: var(--neutral-dark) !important;
+  opacity: 1 !important;
+}
 .section-text { color: var(--text); opacity: .95; }
 
 /* ---------- Header ---------- */
@@ -182,7 +188,14 @@ button { font: inherit; cursor: pointer; border: 0; background: none; }
 }
 .features-card .card-icon ion-icon { --ionicon-stroke-width: 42px; }
 .features-card .card-title { font-family: var(--ff-heading); font-size: var(--fs-h3); margin: 14px 0 8px; }
-.features-card .card-text { margin-top: auto; }
+/* .features-card .card-text { margin-top: auto; } */
+/* Ensure feature/audience card text is solid */
+.features-card .card-text,
+.audience-text,
+.item-text {
+  color: var(--neutral-dark) !important;
+  opacity: 1 !important;
+}
 
 /* ---------- About / How it Works ---------- */
 .about { background: var(--neutral-light); }
@@ -222,6 +235,18 @@ button { font: inherit; cursor: pointer; border: 0; background: none; }
 .business-vendor-balance.theme-dark .section-title { color: #fff; }
 .business-vendor-balance.theme-dark .item-icon { background: color-mix(in srgb, var(--primary-blue) 22%, transparent); color: #fff; }
 
+/* Headings use heading font */
+.h1, .h2, .h3,
+.section-title,
+.card-title,
+.item-title,
+.audience-title,
+.pricing-title {
+  font-family: var(--ff-heading) !important;
+  color: var(--neutral-dark) !important;
+  opacity: 1 !important;
+}
+
 /* ---------- Pricing ---------- */
 .pricing.tint-green { background: color-mix(in srgb, var(--primary-blue) 8%, #fff); }
 .pricing .pricing-plans { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); }
@@ -251,7 +276,21 @@ button { font: inherit; cursor: pointer; border: 0; background: none; }
 .footer-top .container { display: grid; gap: 28px; }
 @media (min-width: 992px) { .footer-top .container { grid-template-columns: 1.6fr .8fr .8fr .8fr; gap: 40px; } }
 .footer .logo { color: var(--neutral-dark); }
-.footer .section-text { margin-block: 15px 22px; color: color-mix(in srgb, var(--neutral-dark) 88%, black 12%); }
+/* Paragraphs and body copy — no opacity */
+.section-text,
+.card-text,
+.pricing .pricing-text,
+/* .footer .section-text {
+  color: var(--neutral-dark) !important;
+  opacity: 1 !important;
+} */
+ /* Remove any subtle lightening from footer text */
+.footer .section-text,
+.footer .footer-link,
+.footer .item-link,
+.footer .copyright {
+  color: var(--neutral-dark) !important;
+}
 
 .footer .social-list { display: flex; gap: 10px; }
 .social-link {
@@ -310,6 +349,7 @@ button { font: inherit; cursor: pointer; border: 0; background: none; }
 .ib-logo-mark { color: #1A3543; }            /* ring + rods (navy) */
 .ib-logo-mark .ib-bead-2 { fill: #38BDF8; }  /* middle bead (sky blue) */
 .ib-word {
-  font-family: var(--ff-heading);
-  font-weight: 700; letter-spacing: .2px; color: #1A3543;
+  font-family: var(--ff-heading) !important;
+  color: var(--neutral-dark) !important;
+  opacity: 1 !important;
 }
