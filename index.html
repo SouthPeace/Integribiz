@@ -4,17 +4,11 @@
   <!-- Meta -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>IntegriBiz — Learn. Organize. Collaborate.</title>
   <meta name="description" content="IntegriBiz helps SMEs learn standards, organize evidence, and collaborate with auditors—so you’re audit-ready without the complexity." />
-
-  <!-- Favicons / PWA -->
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#1FA12E">
   <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#38BDF8" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="IntegriBiz — Learn. Organize. Collaborate.">
@@ -23,10 +17,15 @@
   <meta property="og:url" content="https://integribiz.com/">
   <meta property="og:image" content="./assets/images/Screenshot 2024-07-20 173441.png">
 
+  <!-- Favicons / PWA (update paths if needed) -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Brand fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <!-- CSS -->
@@ -47,7 +46,7 @@
   </script>
 </head>
 <body id="top">
-  <!-- Brand SVG sprite (abacus mark) -->
+  <!-- Brand SVG sprite (abacus mark — navy + sky blue via CSS) -->
   <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
     <symbol id="ib-mark" viewBox="0 0 512 512">
       <circle cx="256" cy="256" r="216" fill="none" stroke="currentColor" stroke-width="28" stroke-linecap="round"/>
@@ -56,7 +55,7 @@
       <rect x="184" y="247" width="196" height="18" rx="9" fill="currentColor"/>
       <rect x="184" y="338" width="196" height="18" rx="9" fill="currentColor"/>
       <circle cx="338" cy="165" r="24" fill="currentColor"/>
-      <circle cx="282" cy="256" r="24" fill="#FF7043"/><!-- accent bead -->
+      <circle class="ib-bead-2" cx="282" cy="256" r="24" />
       <circle cx="226" cy="347" r="24" fill="currentColor"/>
     </symbol>
   </svg>
@@ -160,31 +159,28 @@
               <li class="about-item">
                 <div class="item-icon"><ion-icon name="list-outline" aria-hidden="true"></ion-icon></div>
                 <div>
-                  <h3 class="h3 item-title">1) Choose your standard</h3>
+                  <h3 class="h3 item-title">Choose your standard</h3>
                   <p class="item-text">Start with ISO 9001/14001/45001/27001. Follow checklists that show exactly what to collect and why it matters.</p>
                 </div>
               </li>
-
               <li class="about-item">
                 <div class="item-icon"><ion-icon name="cloud-upload-outline" aria-hidden="true"></ion-icon></div>
                 <div>
-                  <h3 class="h3 item-title">2) Centralize your evidence</h3>
+                  <h3 class="h3 item-title">Centralize your evidence</h3>
                   <p class="item-text">Store or link files, tag them to clauses, and keep version history and validation in one place.</p>
                 </div>
               </li>
-
               <li class="about-item">
                 <div class="item-icon"><ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon></div>
                 <div>
-                  <h3 class="h3 item-title">3) Collaborate in context</h3>
+                  <h3 class="h3 item-title">Collaborate in context</h3>
                   <p class="item-text">Loop in teammates, assign tasks, and capture discussions next to the work.</p>
                 </div>
               </li>
-
               <li class="about-item">
                 <div class="item-icon"><ion-icon name="checkbox-outline" aria-hidden="true"></ion-icon></div>
                 <div>
-                  <h3 class="h3 item-title">4) Get expert reviews</h3>
+                  <h3 class="h3 item-title">Get expert reviews</h3>
                   <p class="item-text">Request reviews or quotes from vetted auditors/helpers and pay through escrow for trusted delivery.</p>
                 </div>
               </li>
@@ -201,32 +197,31 @@
           <h2 class="h2 section-title">Who IntegriBiz is for</h2>
           <div class="audience-list">
             <div class="audience-item">
-              <h3 class="h3 audience-title">SMEs & mid-market teams</h3>
-              <p class="audience-text">Operations, quality, and compliance managers who need a practical way to get audit-ready without enterprise budgets.</p>
+              <div class="audience-icon"><ion-icon name="business-outline" aria-hidden="true"></ion-icon></div>
+              <div>
+                <h3 class="h3 audience-title">SMEs & mid-market teams</h3>
+                <p class="audience-text">Operations, quality, and compliance managers who need a practical way to get audit-ready without enterprise budgets.</p>
+              </div>
             </div>
+
             <div class="audience-item">
-              <h3 class="h3 audience-title">Consultants & auditors</h3>
-              <p class="audience-text">Grow your pipeline, work inside client workspaces, and get paid via secure escrow.</p>
+              <div class="audience-icon"><ion-icon name="people-outline" aria-hidden="true"></ion-icon></div>
+              <div>
+                <h3 class="h3 audience-title">Consultants & auditors</h3>
+                <p class="audience-text">Grow your pipeline, work inside client workspaces, and get paid via secure escrow.</p>
+              </div>
             </div>
           </div>
-          <div class="industries">
+
+          <div class="industries" style="margin-top:16px">
             <h3 class="h3 industries-title">Great fit for</h3>
             <p class="industries-text">Manufacturing, construction, logistics, oil & gas, healthcare, IT services — and any team pursuing ISO certification.</p>
           </div>
         </div>
       </section>
 
-      <!-- OUR STORY -->
-      <section class="section about-2" id="story" aria-label="our story">
-        <div class="container">
-          <p class="section-subtitle">Our Story</p>
-          <h2 class="h2 section-title">Built to make readiness reachable</h2>
-          <p class="section-text">We started IntegriBiz to help SMEs, farmers, manufacturers, and service providers run confident, structured operations — not by drowning in admin, but by giving teams clarity, guidance, and a shared place to work.</p>
-        </div>
-      </section>
-
-      <!-- OUR VISION -->
-      <section class="section about-2" id="vision" aria-label="our vision">
+      <!-- OUR VISION (styled with app gradient block) -->
+      <section class="section app" id="vision" aria-label="our vision">
         <div class="container">
           <p class="section-subtitle">Our Vision</p>
           <h2 class="h2 section-title">A level playing field</h2>
@@ -309,7 +304,7 @@
       </section>
 
       <!-- APP -->
-      <section class="section app theme-accent" aria-label="app" id="app">
+      <section class="section app" aria-label="app" id="app">
         <div class="container">
           <div class="app-content">
             <p class="section-subtitle">Mobile companion</p>
@@ -346,7 +341,7 @@
           <li><a href="#how-it-works" class="footer-link">How it Works</a></li>
           <li><a href="#pricing" class="footer-link">Pricing</a></li>
           <li><a href="#auditors" class="footer-link">For Auditors</a></li>
-          <li><a href="#" class="footer-link">About</a></li>
+          <li><a href="#vision" class="footer-link">Vision</a></li>
         </ul>
 
         <ul class="footer-list">
@@ -384,7 +379,7 @@
 
   <!-- Scripts -->
   <script src="./assets/js/script.js" defer></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
 </body>
 </html>
