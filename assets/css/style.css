@@ -360,6 +360,11 @@ a:not(.btn) { color: var(--primary-blue); }
   opacity: 1 !important;
   -webkit-text-fill-color: currentColor;
 }
+#audience .industries-text{
+  color: #E7EEF3 !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: currentColor;
+}
 
 /* Security & reliability (explicit targets) */
 #security .section-title,
@@ -390,7 +395,7 @@ a:not(.btn) { color: var(--primary-blue); }
 /* Footer: everything readable */
 .footer,
 .footer * {
-  color: var(--neutral-dark) !important;
+  color: #fff !important;
   opacity: 1 !important;
   -webkit-text-fill-color: currentColor;
 }
