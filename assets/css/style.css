@@ -381,3 +381,19 @@ a:not(.btn) { color: var(--primary-blue); }
 .btn, a.btn { color: #fff !important; }
 .btn-secondary { background: var(--accent-yellow); }
 .btn-secondary:hover { background: var(--accent-yellow-600); }
+
+/* ---------- RESPECT INLINE WHITE TEXT ---------- */
+/* If an element has inline style="color: #fff" (or white/#ffffff),
+   force it to remain white even when global rules use !important. */
+:where([style*="color:#fff"],
+       [style*="color: #fff"],
+       [style*="color:#FFF"],
+       [style*="color: #FFF"],
+       [style*="color:#ffffff"],
+       [style*="color: #ffffff"],
+       [style*="color:#FFFFFF"],
+       [style*="color: #FFFFFF"],
+       [style*="color:white"]) {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
