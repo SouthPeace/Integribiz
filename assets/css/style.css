@@ -325,7 +325,21 @@ a:not(.btn) { color: var(--primary-blue); }
   font-weight: 700; letter-spacing: .2px; color: #1A3543;
 }
 
-/* === SOLID HEADINGS ON LIGHT BACKGROUNDS === */
+/* === CONTRAST HARDENING PACK — LIGHT + DARK + FOOTER === */
+
+/* Light (white) sections: make copy fully opaque & dark */
+.section:not(.theme-dark) .section-text,
+.section:not(.theme-dark) .item-text,
+.section:not(.theme-dark) .card-text,
+.section:not(.theme-dark) .audience-text,
+.section:not(.theme-dark) .industries-text,
+.section:not(.theme-dark) .pricing-text {
+  color: var(--neutral-dark) !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: currentColor;
+}
+
+/* Light sections: make headings solid */
 .section:not(.theme-dark) .section-title,
 .section:not(.theme-dark) .h1,
 .section:not(.theme-dark) .h2,
@@ -336,5 +350,48 @@ a:not(.btn) { color: var(--primary-blue); }
 .pricing .pricing-title {
   color: var(--neutral-dark) !important;
   opacity: 1 !important;
-  -webkit-text-fill-color: currentColor; /* Safari guard */
+  -webkit-text-fill-color: currentColor;
 }
+
+/* Security & reliability (explicit targets) */
+#security .section-title,
+#security .security-support-title,
+#security .security-support-text {
+  color: var(--neutral-dark) !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: currentColor;
+}
+
+/* “For Auditors” dark block: ensure bright text */
+.theme-dark .section-text,
+.theme-dark .item-text,
+.theme-dark .card-text {
+  color: #E7EEF3 !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: currentColor;
+}
+.theme-dark .section-title,
+.theme-dark .h1,
+.theme-dark .h2,
+.theme-dark .h3,
+.theme-dark .item-title {
+  color: #FFFFFF !important;
+  opacity: 1 !important;
+}
+
+/* Footer: everything readable */
+.footer,
+.footer * {
+  color: var(--neutral-dark) !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: currentColor;
+}
+.footer .footer-link:hover,
+.footer .item-link:hover { color: var(--primary-blue) !important; text-decoration: underline; }
+.footer .footer-list-title { font-weight: 700 !important; }
+.footer .logo .ib-word { color: var(--neutral-dark) !important; }
+
+/* Keep buttons legible (don’t let link overrides affect them) */
+.btn, a.btn { color: #fff !important; }
+.btn-secondary { background: var(--accent-yellow) !important; color: #fff !important; }
+.btn-secondary:hover { background: var(--accent-yellow-600) !important; }
