@@ -393,12 +393,12 @@ a:not(.btn) { color: var(--primary-blue); }
 }
 
 /* Footer: everything readable */
-.footer,
+/* .footer,
 .footer * {
   color: var(--neutral-dark) !important;
   opacity: 1 !important;
   -webkit-text-fill-color: currentColor;
-}
+} */
 .footer .ib-word { color: #fff !important; }
 .footer .section-text { color: #fff !important; }
 .footer .footer-list-title { color: #fff !important; }
