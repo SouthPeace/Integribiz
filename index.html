@@ -69,15 +69,15 @@
       </a>
 
       <nav class="navbar" data-navbar>
-        <ul class="navbar-list container" style="list-style-type: none;">
-          <li><a href="#home" class="navbar-link active" aria-current="page" data-nav-link>Home</a></li>
-          <li><a href="#solutions" class="navbar-link" data-nav-link>Solutions</a></li>
-          <li><a href="#how-it-works" class="navbar-link" data-nav-link>How it Works</a></li>
-          <li><a href="#pricing" class="navbar-link" data-nav-link>Pricing</a></li>
-          <li><a href="#auditors" class="navbar-link" data-nav-link>For Auditors</a></li>
-          <li><a href="#support" class="navbar-link" data-nav-link>Support</a></li>
-          <li><a href="https://integribiz-561d8.web.app/" class="btn btn-primary" target="_blank" rel="noopener">Start Free</a></li>
-        </ul>
+        <div class="navbar-list container">
+          <a href="#home" class="navbar-link active" aria-current="page" data-nav-link>Home</a>
+          <a href="#solutions" class="navbar-link" data-nav-link>Solutions</a>
+          <a href="#how-it-works" class="navbar-link" data-nav-link>How it Works</a>
+          <a href="#pricing" class="navbar-link" data-nav-link>Pricing</a>
+          <a href="#auditors" class="navbar-link" data-nav-link>For Auditors</a>
+          <a href="#support" class="navbar-link" data-nav-link>Support</a>
+          <a href="https://integribiz-561d8.web.app/" class="btn btn-primary" target="_blank" rel="noopener">Start Free</a>
+        </div>
       </nav>
 
       <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
@@ -93,22 +93,41 @@
       <section class="section hero" id="home" aria-label="hero">
         <div class="container">
           <div class="hero-content">
-            <h1 class="h1 hero-title" >Learn. Organize. Collaborate.</h1>
-            <p class="section-text" >The ISO readiness workspace for SMEs. Get plain-English guidance, keep your evidence in one place, and work with trusted auditors — without enterprise-level complexity.</p>
-            <p class="section-text" >Supported today: ISO 9001, 14001, 45001, 27001 — with more on the way.</p>
-            <ul class="btn-list">
-              <li><a href="https://integribiz-561d8.web.app/" class="btn btn-primary" target="_blank" rel="noopener">Start Free (SME)</a></li>
-              <li><a href="#auditors" class="btn btn-secondary">Join as Auditor</a></li>
-              <li>
-                <a href="https://play.google.com/store/apps/details?id=com.integribiz.newcomplyiso" class="btn-item-link" aria-label="Download on Google Play">
-                  <img src="./assets/images/play-store.png" width="185" height="69" alt="Get it on Google Play" class="img" decoding="async" loading="lazy">
+            <h1 class="h1 hero-title">Learn. Organize. Collaborate.</h1>
+            <p class="section-text">The ISO readiness workspace for SMEs. Get plain-English guidance, keep your evidence in one place, and work with trusted auditors — without enterprise-level complexity.</p>
+            <p class="section-text">Supported today: ISO 9001, 14001, 45001, 27001 — with more on the way.</p>
+
+            <div class="btn-list">
+              <a href="https://integribiz-561d8.web.app/" class="btn btn-primary" target="_blank" rel="noopener">
+                Start Free (SME)
+              </a>
+              <a href="#auditors" class="btn btn-secondary">
+                Join as Auditor
+              </a>
+              <div>
+                <a href="https://play.google.com/store/apps/details?id=com.integribiz.newcomplyiso"
+                   class="btn-item-link"
+                   aria-label="Download on Google Play">
+                  <img src="./assets/images/play-store.png"
+                       width="185"
+                       height="69"
+                       alt="Get it on Google Play"
+                       class="img"
+                       decoding="async"
+                       loading="lazy">
                 </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
 
           <figure class="hero-banner">
-            <img src="./assets/images/Screenshot 2024-07-20 173441.png" width="769" height="804" alt="IntegriBiz product preview" class="w-100" decoding="async" loading="lazy">
+            <img src="./assets/images/Screenshot 2024-07-20 173441.png"
+                 width="769"
+                 height="804"
+                 alt="IntegriBiz product preview"
+                 class="w-100"
+                 decoding="async"
+                 loading="lazy">
           </figure>
         </div>
       </section>
@@ -117,31 +136,48 @@
       <section class="section features" id="solutions" aria-label="solutions">
         <div class="container">
           <h2 class="h2 section-title">Everything you need to get audit-ready</h2>
-          <ul class="features-list">
-            <li class="features-item">
+          <div class="features-list">
+
+            <div class="features-item">
               <div class="features-card">
-                <div class="card-icon"><ion-icon name="school-outline" aria-hidden="true"></ion-icon></div>
+                <div class="card-icon">
+                  <ion-icon name="school-outline" aria-hidden="true"></ion-icon>
+                </div>
                 <h3 class="h3 card-title">Learn the standards</h3>
-                <p class="card-text">Clause-by-clause explainers in simple language with examples, checklists, and what each step means for your business.</p>
+                <p class="card-text">
+                  Clause-by-clause explainers in simple language with examples, checklists,
+                  and what each step means for your business.
+                </p>
               </div>
-            </li>
+            </div>
 
-            <li class="features-item">
+            <div class="features-item">
               <div class="features-card">
-                <div class="card-icon"><ion-icon name="document-outline" aria-hidden="true"></ion-icon></div>
-                <h3 class="h3 card-title">Organize evidence & documents</h3>
-                <p class="card-text">Upload securely, version files, and link evidence to clauses. Keep a clear audit trail and connect Google Drive when you need it.</p>
+                <div class="card-icon">
+                  <ion-icon name="document-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <h3 class="h3 card-title">Organize evidence &amp; documents</h3>
+                <p class="card-text">
+                  Upload securely, version files, and link evidence to clauses. Keep a clear
+                  audit trail and connect Google Drive when you need it.
+                </p>
               </div>
-            </li>
+            </div>
 
-            <li class="features-item">
+            <div class="features-item">
               <div class="features-card">
-                <div class="card-icon"><ion-icon name="people-outline" aria-hidden="true"></ion-icon></div>
+                <div class="card-icon">
+                  <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+                </div>
                 <h3 class="h3 card-title">Work with your team — and experts</h3>
-                <p class="card-text">Assign owners and due dates, discuss in context, and get quotes from verified auditors and helpers using escrow for safe delivery.</p>
+                <p class="card-text">
+                  Assign owners and due dates, discuss in context, and get quotes from verified
+                  auditors and helpers using escrow for safe delivery.
+                </p>
               </div>
-            </li>
-          </ul>
+            </div>
+
+          </div>
         </div>
       </section>
 
@@ -149,44 +185,80 @@
       <section class="section about" id="how-it-works" aria-label="how it works">
         <div class="container">
           <figure class="about-banner">
-            <img src="./assets/images/Screenshot 2024-07-20 182342.png" width="1262" height="1357" loading="lazy" alt="Workflow illustration" class="w-100" decoding="async">
+            <img src="./assets/images/Screenshot 2024-07-20 182342.png"
+                 width="1262"
+                 height="1357"
+                 loading="lazy"
+                 alt="Workflow illustration"
+                 class="w-100"
+                 decoding="async">
           </figure>
 
           <div class="about-content">
             <p class="section-subtitle">Simple, guided steps</p>
             <h2 class="h2 section-title">From idea to certification-ready</h2>
-            <ul class="about-list">
-              <li class="about-item">
-                <div class="item-icon"><ion-icon name="list-outline" aria-hidden="true"></ion-icon></div>
+
+            <div class="about-list">
+
+              <div class="about-item">
+                <div class="item-icon">
+                  <ion-icon name="list-outline" aria-hidden="true"></ion-icon>
+                </div>
                 <div>
                   <h3 class="h3 item-title">Choose your standard</h3>
-                  <p class="item-text">Start with ISO 9001/14001/45001/27001. Follow checklists that show exactly what to collect and why it matters.</p>
+                  <p class="item-text">
+                    Start with ISO 9001/14001/45001/27001. Follow checklists that show exactly
+                    what to collect and why it matters.
+                  </p>
                 </div>
-              </li>
-              <li class="about-item">
-                <div class="item-icon"><ion-icon name="cloud-upload-outline" aria-hidden="true"></ion-icon></div>
+              </div>
+
+              <div class="about-item">
+                <div class="item-icon">
+                  <ion-icon name="cloud-upload-outline" aria-hidden="true"></ion-icon>
+                </div>
                 <div>
                   <h3 class="h3 item-title">Centralize your evidence</h3>
-                  <p class="item-text">Store or link files, tag them to clauses, and keep version history and validation in one place.</p>
+                  <p class="item-text">
+                    Store or link files, tag them to clauses, and keep version history and
+                    validation in one place.
+                  </p>
                 </div>
-              </li>
-              <li class="about-item">
-                <div class="item-icon"><ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon></div>
+              </div>
+
+              <div class="about-item">
+                <div class="item-icon">
+                  <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
+                </div>
                 <div>
                   <h3 class="h3 item-title">Collaborate in context</h3>
-                  <p class="item-text">Loop in teammates, assign tasks, and capture discussions next to the work.</p>
+                  <p class="item-text">
+                    Loop in teammates, assign tasks, and capture discussions next to the work.
+                  </p>
                 </div>
-              </li>
-              <li class="about-item">
-                <div class="item-icon"><ion-icon name="checkbox-outline" aria-hidden="true"></ion-icon></div>
+              </div>
+
+              <div class="about-item">
+                <div class="item-icon">
+                  <ion-icon name="checkbox-outline" aria-hidden="true"></ion-icon>
+                </div>
                 <div>
                   <h3 class="h3 item-title">Get expert reviews</h3>
-                  <p class="item-text">Request reviews or quotes from vetted auditors/helpers and pay through escrow for trusted delivery.</p>
+                  <p class="item-text">
+                    Request reviews or quotes from vetted auditors/helpers and pay through escrow
+                    for trusted delivery.
+                  </p>
                 </div>
-              </li>
-            </ul>
+              </div>
 
-            <a href="https://integribiz-561d8.web.app/" class="btn btn-secondary" target="_blank" rel="noopener">Start free</a>
+            </div>
+
+            <a href="https://integribiz-561d8.web.app/"
+               class="btn btn-secondary"
+               target="_blank"
+               rel="noopener">
+              Start free
+            </a>
           </div>
         </div>
       </section>
@@ -195,27 +267,40 @@
       <section class="section audience" id="audience" aria-label="who it's for">
         <div class="container">
           <h2 class="h2 section-title" style="color: #fff">Who IntegriBiz is for</h2>
+
           <div class="audience-list">
             <div class="audience-item">
-              <div class="audience-icon"><ion-icon name="business-outline" aria-hidden="true"></ion-icon></div>
+              <div class="audience-icon">
+                <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+              </div>
               <div>
-                <h3 class="h3 audience-title">SMEs & mid-market teams</h3>
-                <p class="audience-text">Operations, quality, and compliance managers who need a practical way to get audit-ready without enterprise budgets.</p>
+                <h3 class="h3 audience-title">SMEs &amp; mid-market teams</h3>
+                <p class="audience-text">
+                  Operations, quality, and compliance managers who need a practical way to get
+                  audit-ready without enterprise budgets.
+                </p>
               </div>
             </div>
 
             <div class="audience-item">
-              <div class="audience-icon"><ion-icon name="people-outline" aria-hidden="true"></ion-icon></div>
+              <div class="audience-icon">
+                <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+              </div>
               <div>
-                <h3 class="h3 audience-title">Consultants & auditors</h3>
-                <p class="audience-text">Grow your pipeline, work inside client workspaces, and get paid via secure escrow.</p>
+                <h3 class="h3 audience-title">Consultants &amp; auditors</h3>
+                <p class="audience-text">
+                  Grow your pipeline, work inside client workspaces, and get paid via secure escrow.
+                </p>
               </div>
             </div>
           </div>
 
           <div class="industries" style="margin-top:16px">
             <h3 class="h3 industries-title" style="color: #fff">Great fit for</h3>
-            <p class="industries-text" style="color: #fff">Manufacturing, construction, logistics, oil & gas, healthcare, IT services — and any team pursuing ISO certification.</p>
+            <p class="industries-text" style="color: #fff">
+              Manufacturing, construction, logistics, oil &amp; gas, healthcare, IT services —
+              and any team pursuing ISO certification.
+            </p>
           </div>
         </div>
       </section>
@@ -225,26 +310,36 @@
         <div class="container">
           <p class="section-subtitle">Our Vision</p>
           <h2 class="h2 section-title">A level playing field</h2>
-          <p class="section-text">Every SME should have access to enterprise-grade tools for governance, audit readiness, and collaboration — so they can compete in global markets with confidence.</p>
+          <p class="section-text">
+            Every SME should have access to enterprise-grade tools for governance, audit readiness,
+            and collaboration — so they can compete in global markets with confidence.
+          </p>
         </div>
       </section>
 
       <!-- SECURITY & RELIABILITY -->
       <section class="section security-support" id="security" aria-label="security">
         <div class="container">
-          <h2 class="h2 section-title" style="color: #fff">Security & reliability</h2>
+          <h2 class="h2 section-title" style="color: #fff">Security &amp; reliability</h2>
           <div class="security-support-list">
             <div class="security-support-item">
               <h3 class="h3 security-support-title" style="color: #fff">Data protection</h3>
-              <p class="security-support-text">Role-based access, audit trails, version history, and export options. Your evidence stays organized and secure.</p>
+              <p class="security-support-text">
+                Role-based access, audit trails, version history, and export options.
+                Your evidence stays organized and secure.
+              </p>
             </div>
             <div class="security-support-item">
               <h3 class="h3 security-support-title" style="color: #fff">Cloud integrations</h3>
-              <p class="security-support-text">Connect Google Drive to keep files in sync and link evidence directly to clauses.</p>
+              <p class="security-support-text">
+                Connect Google Drive to keep files in sync and link evidence directly to clauses.
+              </p>
             </div>
             <div class="security-support-item">
               <h3 class="h3 security-support-title" style="color: #fff">Responsive support</h3>
-              <p class="security-support-text">Onboarding help, imports, and best-practice guidance from a team that understands SMEs.</p>
+              <p class="security-support-text">
+                Onboarding help, imports, and best-practice guidance from a team that understands SMEs.
+              </p>
             </div>
           </div>
         </div>
@@ -253,32 +348,59 @@
       <!-- FOR AUDITORS / MARKETPLACE -->
       <section class="section business-vendor-balance theme-dark" id="auditors" aria-label="for auditors">
         <div class="container">
-          <h2 class="h2 section-title">For auditors & helpers</h2>
-          <p class="section-text">Join the marketplace to meet SMEs who are already organized and ready to work — with scope, evidence, and timelines in one place.</p>
-          <ul class="about-list">
-            <li class="about-item">
-              <div class="item-icon"><ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon></div>
+          <h2 class="h2 section-title">For auditors &amp; helpers</h2>
+          <p class="section-text">
+            Join the marketplace to meet SMEs who are already organized and ready to work —
+            with scope, evidence, and timelines in one place.
+          </p>
+
+          <div class="about-list">
+
+            <div class="about-item">
+              <div class="item-icon">
+                <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+              </div>
               <div>
                 <h3 class="h3 item-title">Qualified leads</h3>
-                <p class="item-text">Clients share clause-mapped evidence and scoped needs so you can quote quickly and accurately.</p>
+                <p class="item-text">
+                  Clients share clause-mapped evidence and scoped needs so you can quote
+                  quickly and accurately.
+                </p>
               </div>
-            </li>
-            <li class="about-item">
-              <div class="item-icon"><ion-icon name="card-outline" aria-hidden="true"></ion-icon></div>
+            </div>
+
+            <div class="about-item">
+              <div class="item-icon">
+                <ion-icon name="card-outline" aria-hidden="true"></ion-icon>
+              </div>
               <div>
-                <h3 class="h3 item-title">Escrow & payouts</h3>
-                <p class="item-text">Work confidently with milestone-based releases and clear deliverables.</p>
+                <h3 class="h3 item-title">Escrow &amp; payouts</h3>
+                <p class="item-text">
+                  Work confidently with milestone-based releases and clear deliverables.
+                </p>
               </div>
-            </li>
-            <li class="about-item">
-              <div class="item-icon"><ion-icon name="speedometer-outline" aria-hidden="true"></ion-icon></div>
+            </div>
+
+            <div class="about-item">
+              <div class="item-icon">
+                <ion-icon name="speedometer-outline" aria-hidden="true"></ion-icon>
+              </div>
               <div>
                 <h3 class="h3 item-title">Work in context</h3>
-                <p class="item-text">Review docs, add comments, and assign tasks right where the client is working.</p>
+                <p class="item-text">
+                  Review docs, add comments, and assign tasks right where the client is working.
+                </p>
               </div>
-            </li>
-          </ul>
-          <a href="https://integribiz-561d8.web.app/" class="btn btn-primary" target="_blank" rel="noopener">Create auditor profile</a>
+            </div>
+
+          </div>
+
+          <a href="https://integribiz-561d8.web.app/"
+             class="btn btn-primary"
+             target="_blank"
+             rel="noopener">
+            Create auditor profile
+          </a>
         </div>
       </section>
 
@@ -289,15 +411,24 @@
           <div class="pricing-plans">
             <div class="pricing-plan">
               <h3 class="h3 pricing-title">Free Trial — 5 days</h3>
-              <p class="pricing-text">Full access to learning checklists, document management, and collaboration. Includes basic support and up to 10&nbsp;GB storage.</p>
+              <p class="pricing-text">
+                Full access to learning checklists, document management, and collaboration.
+                Includes basic support and up to 10&nbsp;GB storage.
+              </p>
             </div>
             <div class="pricing-plan featured">
               <h3 class="h3 pricing-title">SME Plan — ZAR&nbsp;300 / month</h3>
-              <p class="pricing-text">Everything in Free, plus priority support, more storage (20&nbsp;GB), and access to the auditor marketplace.</p>
+              <p class="pricing-text">
+                Everything in Free, plus priority support, more storage (20&nbsp;GB),
+                and access to the auditor marketplace.
+              </p>
             </div>
             <div class="pricing-plan">
               <h3 class="h3 pricing-title">Auditor Profile — Beta</h3>
-              <p class="pricing-text">List services, receive opportunities, quote in-platform, and use escrow. Limited-time beta pricing.</p>
+              <p class="pricing-text">
+                List services, receive opportunities, quote in-platform, and use escrow.
+                Limited-time beta pricing.
+              </p>
             </div>
           </div>
         </div>
@@ -309,8 +440,13 @@
           <div class="app-content">
             <p class="section-subtitle">Mobile companion</p>
             <h2 class="h2 section-title">Stay audit-ready on the go</h2>
-            <p class="section-text">Capture photos, upload evidence, and check tasks from your phone.</p>
-            <a href="https://play.google.com/store/apps/details?id=com.integribiz.newcomplyiso" class="btn btn-secondary">Get the Android app</a>
+            <p class="section-text">
+              Capture photos, upload evidence, and check tasks from your phone.
+            </p>
+            <a href="https://play.google.com/store/apps/details?id=com.integribiz.newcomplyiso"
+               class="btn btn-secondary">
+              Get the Android app
+            </a>
           </div>
         </div>
       </section>
@@ -324,50 +460,72 @@
       <div class="container">
         <div class="footer-brand">
           <a href="#top" class="logo" aria-label="IntegriBiz">
-            <svg class="ib-logo-mark" width="28" height="28" aria-hidden="true"><use href="#ib-mark"></use></svg>
+            <svg class="ib-logo-mark" width="28" height="28" aria-hidden="true">
+              <use href="#ib-mark"></use>
+            </svg>
             <span class="ib-word" style="color: #fff">IntegriBiz</span>
           </a>
-          <p class="section-text" style="color: #fff">IntegriBiz helps SMEs and auditors collaborate to achieve ISO certification readiness with integrity.</p>
-          <ul class="social-list">
-            <li><a href="#" class="social-link" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#" class="social-link" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
-            <li><a href="#" class="social-link" aria-label="Google"><ion-icon name="logo-google"></ion-icon></a></li>
-            <li><a href="#" class="social-link" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-          </ul>
+          <p class="section-text" style="color: #fff">
+            IntegriBiz helps SMEs and auditors collaborate to achieve ISO certification readiness with integrity.
+          </p>
+
+          <div class="social-list">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#" class="social-link" aria-label="Google">
+              <ion-icon name="logo-google"></ion-icon>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </div>
         </div>
 
-        <ul class="footer-list">
-          <li><p class="footer-list-title" style="color: #fff">Company</p></li>
-          <li><a href="#how-it-works" class="footer-link" style="color: #fff">How it Works</a></li>
-          <li><a href="#pricing" class="footer-link" style="color: #fff">Pricing</a></li>
-          <li><a href="#auditors" class="footer-link" style="color: #fff">For Auditors</a></li>
-          <li><a href="#vision" class="footer-link" style="color: #fff">Vision</a></li>
-        </ul>
+        <div class="footer-list">
+          <p class="footer-list-title" style="color: #fff">Company</p>
+          <a href="#how-it-works" class="footer-link" style="color: #fff">How it Works</a>
+          <a href="#pricing" class="footer-link" style="color: #fff">Pricing</a>
+          <a href="#auditors" class="footer-link" style="color: #fff">For Auditors</a>
+          <a href="#vision" class="footer-link" style="color: #fff">Vision</a>
+        </div>
 
-        <ul class="footer-list">
-          <li><p class="footer-list-title" style="color: #fff">Resources</p></li>
-          <li><a href="ppolicy.html" class="footer-link" style="color: #fff">Privacy Policy</a></li>
-          <li><a href="#" class="footer-link">Terms &amp; Conditions</a></li>
-          <li><a href="https://integribiz-561d8.web.app/" class="footer-link" target="_blank" rel="noopener">Web App</a></li>
-        </ul>
+        <div class="footer-list">
+          <p class="footer-list-title" style="color: #fff">Resources</p>
+          <a href="ppolicy.html" class="footer-link" style="color: #fff">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms &amp; Conditions</a>
+          <a href="https://integribiz-561d8.web.app/" class="footer-link" target="_blank" rel="noopener">Web App</a>
+        </div>
 
-        <ul class="footer-list">
-          <li><p class="footer-list-title" id="support" style="color: #fff">Get in touch</p></li>
-          <li class="footer-item">
+        <div class="footer-list">
+          <p class="footer-list-title" id="support" style="color: #fff">Get in touch</p>
+
+          <div class="footer-item">
             <ion-icon name="call-outline" aria-hidden="true" style="color: #fff"></ion-icon>
-            <a href="tel:+27681718971" class="item-link" style="color: #fff">+27&nbsp;68&nbsp;171&nbsp;8971</a>
-          </li>
-          <li class="footer-item">
+            <a href="tel:+27681718971" class="item-link" style="color: #fff">
+              +27&nbsp;68&nbsp;171&nbsp;8971
+            </a>
+          </div>
+
+          <div class="footer-item">
             <ion-icon name="mail-outline" aria-hidden="true" style="color: #fff"></ion-icon>
-            <a href="mailto:support@integribiz.com" class="item-link" style="color: #fff">support@integribiz.com</a>
-          </li>
-        </ul>
+            <a href="mailto:support@integribiz.com" class="item-link" style="color: #fff">
+              support@integribiz.com
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="footer-bottom">
       <div class="container">
-        <p class="copyright">&copy; 2024 All rights reserved by <a href="#" class="copyright-link" style="color: #fff">IntegriBiz</a>.</p>
+        <p class="copyright">
+          &copy; 2024 All rights reserved by
+          <a href="#" class="copyright-link" style="color: #fff">IntegriBiz</a>.
+        </p>
       </div>
     </div>
   </footer>

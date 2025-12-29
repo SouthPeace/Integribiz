@@ -106,7 +106,6 @@ ul, ol {
   list-style: none;
 }
 
-
 /* Scrollbar */
 :root { color-scheme: light dark; }
 ::-webkit-scrollbar { width: 10px; height: 10px; }
